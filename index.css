@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+     position:relative; 
+}
+
+
+
+/* navigation bar logo */
+#logo{
+    margin:10px 34px;
+    
+}
+
+#logo img{
+    height:56px;
+    margin: 3px 6px ;
+}
+
+/* navigation bar list styling */
+#navbar ul {
+    display:flex;
+}
+
+/* for top side in black */
+#navbar::before{
+    content:" ";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul li{
+    /* color:white; */
+    list-style:none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    display:block;
+    padding: 10px 22px;
+    text-decoration: none;
+    color:white;
+
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    border-radius:25px;
+
+}
+
+/* navigation bar end */
+
+
+/* home section */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:558px;
+    /* color:white; */
+    
+}
+
+#home::before{
+    content:" ";
+    position:absolute;
+    background-image: url("food3.webp");
+    background-size: cover;
+    top:0px;
+    left:0px;
+    height:72%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align:center ;
+    font-size: 2.8rem;
+}
+#home h1::first-letter{
+    color:deeppink;
+}
+
+#home p{
+    color:white;
+    text-align:center ;
+    font-size: 1.2rem; 
+}
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding:12px;
+} 
+
+/* section container */
+#services{
+    margin:34px;
+    display:flex;
+}
+
+h1{
+    text-align:center;
+}
+h2{
+    text-align: center;
+}
+
+#services .box{
+    border:2px solid black;
+    padding:34px;
+    margin: 15px 20px;
+    border-radius:25px;
+    background-color:#f2f2f2;
+    margin-bottom:20px;
+}
+
+#services .box img{
+    height:150px;
+    margin:auto;
+    display:block;
+}
+
+#services .box p{
+    font-family: sans-serif;
+}
+
+.btn{
+    border-radius: 20px;
+    margin:17px;
+    padding:6px 20px;
+    border:2px solid black;
+    background-color: brown;
+    color:white;
+    box-shadow: 4px 4px 10px black;
+    cursor:pointer;
+}
+.btn:hover{
+    box-shadow: 4px 4px 8px blue; 
+    color:chartreuse;
+    font-weight: bold;
+}
+.btn:active{
+    background-color:cornsilk;
+    color:deeppink;
+}
+
+/* client section */
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.client-item{
+padding:34px;
+}
+
+#client-section{
+    position:relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background-image: url("food3.webp");
+    background-size: cover;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+/* contact section */
+
+#contact{
+    position:relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background-image: url("contact.png");
+    opacity:0.7
+}
+
+#contactbox{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:34px;
+}
+#contactbox input  , #contactbox textarea{
+width:100%;
+padding:0.5rem;
+border-radius:20px;
+
+}
+#contactbox form{
+width:40%;
+}
+#contactbox label{
+    font-size:1.3rem;
+    }
+
+footer{
+    background-color: black;
+    color:white;
+    padding:9px 12px;
+}
+.center{
+    text-align: center;
+}
+
+
+
